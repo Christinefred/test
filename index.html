@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myFirstApp">
     <head>
         <meta charset="utf-8">
+        <script src="angular.min.js"></script>
+            <script src="app.js"></script>
         <title>Hello Coursera</title>
     </head>
     <body>
         <h1>Hello Coursera! Too</h1>
-        <p>All is working</p>
+        <div ng-controller="myFirstController">
+            {{sayHello()}}
+        </div>
+        <div ng-controller="mySecondController">
+            {{name}}
+        </div>
+        <div ng-controller="myThirdController">
+            <input type="text" ng-model="fame">
+            Insidemy input is: {{fame}}
+        </div>
     </body>
 </html>
